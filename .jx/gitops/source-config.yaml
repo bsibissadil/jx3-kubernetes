@@ -11,6 +11,14 @@ spec:
     - name: golang-demo
     - name: golang-htt-demo
       scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: bsibissadil
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: spingbootapp
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
